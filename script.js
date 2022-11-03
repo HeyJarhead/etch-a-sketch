@@ -9,7 +9,7 @@ function makeGrid(rows,cols){
     for (i = 0; i < (rows * cols); i++){
         item = document.createElement('item');
         item.classList.add('item');
-        item.textContent = i + 1;
+        //item.textContent = i + 1;
         //item.style.backgroundColor = 'white';
         item.style.border = '1px solid black';
         container.appendChild(item);
