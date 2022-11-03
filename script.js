@@ -13,11 +13,20 @@ function makeGrid(rows,cols){
         //item.style.backgroundColor = 'white';
         item.style.border = '1px solid black';
         container.appendChild(item);
-        
     }
     
 }
 makeGrid(chosenRows,chosenCols);
+function change(){
+    document.getElementById("container").innerHTML = "";
+    var rowLength = document.querySelector(':root');
+    rowLength.style.setProperty('--row', 4);
+    const container = document.querySelector('#container');
+    makeGrid(4,2);
+    // chosenRows2 = 2;
+    // chosenCols2 = 2;
+    // function makeGrid(chosenRows2,chosenCols2);
+}
 // item.addEventListener('mouseenter',(container) => {
 //     item.style.backgroundColor = 'black';
 // } )
