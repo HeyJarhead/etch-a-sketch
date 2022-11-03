@@ -5,4 +5,10 @@
   grid-auto-rows: 50px;
   text-align: center;
 }
+.item {
+    background-color: rgb(255, 255, 255);
+}
+:hover{
+    background-color: black;
+}
 
