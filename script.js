@@ -8,7 +8,8 @@ function makeGrid(rows,cols){
         let item = document.createElement('item');
         item.classList.add('item');
         item.textContent = i;
-        item.style.backgroundColor = 'green';
+        item.style.backgroundColor = 'white';
+        item.style.border = '1px solid black';
         container.appendChild(item);
         console.log(i);
     }
