@@ -9,7 +9,7 @@ function makeGrid(rows,cols){
     for (i = 0; i < (rows * cols); i++){
         item = document.createElement('item');
         item.classList.add('item');
-        item.textContent = i;
+        item.textContent = i + 1;
         //item.style.backgroundColor = 'white';
         item.style.border = '1px solid black';
         container.appendChild(item);
@@ -35,7 +35,7 @@ function change(){
         }
     }while(val2 < 1 || val2 > 100);
     var rowLength = document.querySelector(':root');
-    rowLength.style.setProperty('--row', val1);
+    rowLength.style.setProperty('--col', val2);
     const container = document.querySelector('#container');
     makeGrid(val1,val2);
     // chosenRows2 = 2;
