@@ -19,10 +19,25 @@ function makeGrid(rows,cols){
 makeGrid(chosenRows,chosenCols);
 function change(){
     document.getElementById("container").innerHTML = "";
+    
+    var val1;
+    var val2;
+    do{
+        val1 = prompt('Please enter the amount of rows you want: ');
+        if(val1 < 1 || val1 > 100){
+            alert("That is not valid, please enter a number between 0 and 100");
+        }
+    }while(val1 < 1 || val1 > 100);
+    do{
+        val2 = prompt('Please enter the amount of colums you want: ');
+        if(val2 < 1 || val2 > 100){
+            alert("That is not valid, please enter a number between 0 and 100");
+        }
+    }while(val2 < 1 || val2 > 100);
     var rowLength = document.querySelector(':root');
-    rowLength.style.setProperty('--row', 4);
+    rowLength.style.setProperty('--row', val1);
     const container = document.querySelector('#container');
-    makeGrid(4,2);
+    makeGrid(val1,val2);
     // chosenRows2 = 2;
     // chosenCols2 = 2;
     // function makeGrid(chosenRows2,chosenCols2);
